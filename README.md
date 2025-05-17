@@ -9,9 +9,9 @@
 - Description
 - Links
 
-  # Education
-  - San Francisco State University
+# Education
+- San Francisco State University
 
-  # Work History
-  - Workplace 1
-  - Workplace 2
+# Work History
+- Workplace 1
+- Workplace 2
