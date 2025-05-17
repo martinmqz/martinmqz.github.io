@@ -21,7 +21,9 @@ minima:
     - title: Jekyll at X (formerly Twitter)
       icon: x-twitter
       url: "https://x.com/jekyllrb"
+minima:
   show_excerpts: true
+minima:
   hide_site_feed_link: true  # `false` or `null` by default
 
 # google_analytics: G-NNNNNNNNNN  // The former `UA-NNNNNNNN-N` format is no longer supported by Google
