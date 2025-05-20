@@ -2,10 +2,8 @@
   "name": "martinmqz.github.io",
   "version": "1.0.0",
   "description": "Martin's github page",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Martin Marquez",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "martinmqz.github.io"
@@ -18,10 +16,5 @@
     "Fullstack",
     "web",
     "developer"
-  ],
-  "author": "Martin Marquez",
-  "license": "ISC",
-  "dependencies": {
-    "@csstools/normalize.css": "^12.1.1"
-  }
+  ]
 }
