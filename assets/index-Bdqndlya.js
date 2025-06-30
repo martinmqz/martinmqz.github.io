@@ -159,7 +159,7 @@ var de=Object.defineProperty;var ue=(e,t,i)=>t in e?de(e,t,{enumerable:!0,config
           </a>
         </div>
         <div class="home-img">
-          <img src="src/images/Martin-1.md.jpg" alt="Martin" />
+          <img src="assets/Martin-1.md-DStlfFvj.jpg" alt="Martin" />
         </div>
       </div>
       <a href="#about" class="scroll-down">Scroll down&nbsp;<i class="fa-solid fa-arrow-down"></i>
