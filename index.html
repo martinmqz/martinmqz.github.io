@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>martinmqz.github.io | Martin Marquez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X4WS8XH4TQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -20,14 +20,22 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png+xml" />
 
-    <title>martinmqz.github.io | Martin Marquez</title>
-    <script type="module" crossorigin src="/assets/index-CLkT6XkM.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-sed_YqVG.css">
+    <script>
+      function turnstileOkCallback() {
+        console.log("Turnstile challenge passed!");
+        // You can add additional logic here, such as form submission or other actions
+      }
+
+      function turnstileErrorCallback() {
+        console.log("Turnstile challenge did not passed!");
+        // You can add additional logic here, such as form submission or other actions
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-o6yrUaW8.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BZosu1e4.css">
   </head>
 
   <body>
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAABi9jPCXI2pDetdW" data-callback="javascriptCallback"></div>
-
     <!-- Scroll to top button -->
     <button id="up-btn" class="btn scroll-top flex-center">
       <i class="fa-solid fa-arrow-up"></i>
@@ -422,6 +430,7 @@
         © <span id="year" class="year">2025</span> by Martin. All rights
         reserved.
       </p>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAABi9jPCXI2pDetdW" data-callback="turnstileOkCallback" data-error-callback="turnstileErrorCallback" status></div>
     </footer>
 
   </body>
