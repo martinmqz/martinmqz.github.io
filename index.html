@@ -19,48 +19,55 @@
     <meta name="description" content="martinmqz - Senior Web Engineer" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png+xml" />
-    <script type="module" crossorigin src="/assets/index-CnJKLGFJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BJdprhcb.css">
+    <script type="module" crossorigin src="/assets/index-BysLqRW1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-tY8VLp1Z.css">
   </head>
 
   <body>
+    <div class="wrapper">
       <!-- Scroll to top button -->
       <button id="up-btn" class="btn scroll-top flex-center" aria-label="Scroll to top">
         <i class="fa-solid fa-arrow-up"></i>
-      </button>
-  
+      </button>  
+
       <!-- Light/Dark button -->
       <div id="theme-btn" class="theme-btn" role="button" aria-label="Toggle light and dark theme">
         <i class="fa-solid fa-moon"></i>
         <i class="fa-solid fa-sun"></i>
-      </div>
-  
-      <!-- Header -->
-      <header id="header" class="header">
-        <div class="container">
-          <div class="header-wrapper">
-            <nav id="nav" class="nav" role="navigation">
-              <ul id="nav-menu" class="nav-menu">
-                <li class="nav-item">
-                  <a href="#home" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <div id="nav-menu-btn" class="nav-menu-btn"></div>
+      </div>      
+    </div>
+   
+    
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="wrapper">
+          <div class="container">
+            <div class="header-wrapper">
+              <nav id="nav" class="nav" role="navigation">
+                <ul id="nav-menu" class="nav-menu">
+                  <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div id="nav-menu-btn" class="nav-menu-btn"></div>
+            </div>
           </div>
-        </div>
+        </div>        
       </header>
   
-      <main id="main"> -->
+      <main id="main">
+        <div class="wrapper">
           <!-- Home -->
           <section id="home" class="home" aria-labelledby="home-heading">
             <div class="container home-wrapper">
@@ -101,9 +108,7 @@
                 <img src="/assets/Martin-1.md-DStlfFvj.jpg" alt="Martin" />
               </div>
             </div>
-            <a href="#about" class="scroll-down">
-              Scroll down
-              <i class="fa-solid fa-arrow-down"></i>
+            <a href="#about" class="scroll-down">Scroll down<i class="fa-solid fa-arrow-down"></i>
             </a>
           </section>
   
@@ -390,47 +395,50 @@
               </div>
             </div>
           </section>
+        </div>
       </main>
   
       <!-- Footer -->
       <footer id="footer" class="footer">
-        <div class="container footer-wrapper">
-          <div class="about-group">
-            <h3>Martin</h3>
-            <p>Frontend Software Engineer</p>
-            <a href="#">About me</a>
+        <div class="wrapper">
+          <div class="container footer-wrapper">
+            <div class="about-group">
+              <h3>Martin</h3>
+              <p>Frontend Software Engineer</p>
+              <a href="#">About me</a>
+            </div>
+            <div class="hr"></div>
+            <div class="info-group">
+              <h3>More</h3>
+              <ul>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow-group">
+              <h3>Follow</h3>
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/webect/" title="LinkedIn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span class="visually-hidden">LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/martinmqz" title="GitHub" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="visually-hidden">GitHub</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="hr"></div>
-          <div class="info-group">
-            <h3>More</h3>
-            <ul>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#contact">contact</a></li>
-            </ul>
-          </div>
-          <div class="hr"></div>
-          <div class="follow-group">
-            <h3>Follow</h3>
-            <ul>
-              <li>
-                <a href="https://www.linkedin.com/in/webect/" title="LinkedIn" aria-label="LinkedIn">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <span class="visually-hidden">LinkedIn</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/martinmqz" title="GitHub" aria-label="GitHub">
-                  <i class="fa-brands fa-github"></i>
-                  <span class="visually-hidden">GitHub</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <p class="footer-copyright">
+            © <span id="year" class="year">2025</span> by Martin. All rights
+            reserved.
+          </p>
         </div>
-        <p class="footer-copyright">
-          © <span id="year" class="year">2025</span> by Martin. All rights
-          reserved.
-        </p>
       </footer>
 
   </body>
