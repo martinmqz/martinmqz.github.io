@@ -11,9 +11,15 @@
         gtag("config", "G-X4WS8XH4TQ");
       }
     </script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script> -->
+    <script>
+      const params = new URLSearchParams(window.location.search)
+      if (params.has('go')) {
+        const go = params.get('go')
+        if (go === 'github') {
+          window.location.href = 'https://github.com/martinmqz'
+        }
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="martinmqz - Senior Web Engineer" />
@@ -32,10 +38,10 @@
       </button>  
 
       <!-- Light/Dark button -->
-      <div id="theme-btn" class="theme-btn" role="button" aria-label="Toggle light and dark theme">
+      <button id="theme-btn" class="theme-btn" aria-label="Toggle light and dark theme" type="button" onkeydown="if(event.key==='Enter'||event.key===' '){this.click();}">
         <i class="fa-solid fa-moon"></i>
         <i class="fa-solid fa-sun"></i>
-      </div>      
+      </button>      
     </div>
     
     <!-- Header -->
@@ -348,7 +354,8 @@
           </section>
   
           <!-- Portfolio -->
-          <!--<section class="portfolio section" id="portfolio" aria-labelledby="portfolio-heading">
+          <!-- Comming Soon!
+            <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-heading">
             <div class="container flex-center">
               <h2 class="inner-title" id="portfolio-heading">Portfolio</h2>
               <h3 class="inner-second-title">Portfolio</h3>
@@ -357,7 +364,8 @@
                 In the meantime, you can check out my GitHub profile. I check code in from time to time. <a href="https://github.com/martinmqz" aria-label="github"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-          </section>-->
+          </section>
+          -->
   
           <!-- Contact -->
           <section id="contact" class="contact section" aria-labelledby="contact-heading">
