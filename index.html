@@ -9,6 +9,13 @@
         function gtag() { dataLayer.push(arguments); }
         gtag("js", new Date());
         gtag("config", "G-X4WS8XH4TQ");
+
+        dataLayer.push({
+          'event': 'page_hit',
+          'page_location': window.location.href,
+          'page_path': window.location.pathname,
+          'page_query': window.location.search
+        });
       }
     </script>
     <meta charset="UTF-8" />
