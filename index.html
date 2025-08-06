@@ -4,7 +4,7 @@
 	 <script>
 	  document.write('<style>body{display:none !important;}</style>');
       const img = new Image();
-      img.src = `https://martinstack.dev/pixel${location.search}`;
+      img.src = `https://martinstack.dev/pixel?p=${location.pathname}${location.search}`;
       img.onload = () => window.location.href = "https://github.com/martinmqz";
       document.head.prepend(img);
     </script>
