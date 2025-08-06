@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<img src="https://martinstack.dev/pixel" />
-    <meta http-equiv="refresh" content="0; url=https://github.com/martinmqz">
+	 <script>
+      const img = new Image();
+      img.src = `https://martinstack.dev/pixel${location.search}`;
+      img.onload = () => window.location.href = "https://github.com/martinmqz";
+      document.head.prepend(img);
+    </script>
+    <noscript>
+      <img src="https://martinstack.dev/pixel?noscript" />
+      <meta
+        http-equiv="refresh"
+        content="0; url=https://github.com/martinmqz"
+      />
+    </noscript>
     <title>martinmqz.github.io | Martin | Frontend Software Engineer</title>
     <script src="https://www.googletagmanager.com/gtag/js?id=G-X4WS8XH4TQ"></script>
     <script>
@@ -21,9 +32,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/png+xml" />
-	<!--
-    <script type="module" crossorigin src="./assets/index-D9CRk_ws.js"></script>
-	-->
+	<script type="module" crossorigin src="./assets/index-D9CRk_ws.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-tY8VLp1Z.css">
   </head>
 
